@@ -1,10 +1,10 @@
 [package]
 name = "pubsub_grpc"
-version = "0.1.0"
+version = "0.4.0"
 authors = ["Jan Algermissen <algermissen@acm.org>"]
 edition = "2018"
 license = "Apache-2.0"
-repository = "https://github.com/tc1io/pubsub-grpc"
+repository = "https://github.com/tc1io/pubsub_grpc"
 description = """
 A gRPC client library for Pubsub, generated automatically from the API definition files in Google APIs.
 """
@@ -13,11 +13,10 @@ keywords = ["pubsub", "grpc", "gcp"]
 [lib]
 
 [dependencies]
-tonic = { version = "0.1", features = ["tls", "tls-roots"] }
-prost = "0.6"
-prost-types = "0.6"
+tonic = { version = "0.4.0", features = ["tls", "tls-roots"] }
+prost = "0.7"
+prost-types = "0.7"
 
 [build-dependencies]
-tonic-build = "0.1"
+tonic-build = "0.4.0"
 
-#documentation = "https://gkkachi.github.io/firestore-grpc"
